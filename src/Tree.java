@@ -19,6 +19,8 @@ public class Tree {
                 System.out.println(" Inserted " + value + " to left of " + node.value);
                 node.left = new Node(value);
             }
+
+
         } else if (value > node.value) {
             if (node.right != null) {
                 insert(node.right, value);

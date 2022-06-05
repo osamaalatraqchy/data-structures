@@ -24,7 +24,8 @@ class Queue {
         
         Node newNode = new Node(data);
         if (this.rear == null) {
-            this.front = this.rear = newNode;
+            this.front = newNode;
+            this.rear = newNode;
             return;
         }
 
